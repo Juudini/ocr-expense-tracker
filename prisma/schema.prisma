@@ -9,3 +9,14 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model user {
+  id                   Int                  @id @default(autoincrement())
+  username             String               @db.VarChar(25)
+  email                String               @unique(map: "user_email_key") @db.VarChar(100)
+  password             String               @db.VarChar(255)
+  profile_picture_url  String?              @db.VarChar(255)
+  registration_date    DateTime             @default(now())
+  last_login_date      DateTime
+  @@index([email], name: "idx_user_email")
+}
