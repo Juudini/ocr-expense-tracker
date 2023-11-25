@@ -1,0 +1,10 @@
+*.md
+build
+data
+dist
+node_modules
+package.json
+pnpm-lock.yaml
+commitlint.config.js
+LICENSE
+**/tsconfig.json
