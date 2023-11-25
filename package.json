@@ -1,7 +1,7 @@
 {
-  "name": "ddd-ts-template",
+  "name": "ocr-expense-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for Money Management App",
   "main": "src/app.js",
   "scripts": {
     "prepare":"husky install",
@@ -12,12 +12,12 @@
     "build": "rimraf ./build && tsc",
     "start": "node --env-file .env build/app.js"
   },
-  "keywords": [],
+  "keywords": ["OCR","Expense","Tracker"],
   "author": "Juan Debandi",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Juudini/ddd-ts-template.git"
+    "url": "https://github.com/Juudini/ocr-expense-tracker.git"
   },
   "devDependencies": {
     "@commitlint/prompt-cli": "^18.4.3",
