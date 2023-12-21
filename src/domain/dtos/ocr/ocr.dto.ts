@@ -1,11 +1,5 @@
-interface ImageBuffer {
-    fieldname: string;
-    originalname: string;
-    encoding: string;
-    mimetype: string;
-    buffer: Buffer;
-    size: number;
-}
+import { ImageBuffer } from "../../../ts";
+
 export class OcrDto {
     constructor(public imageData: ImageBuffer) {}
 
